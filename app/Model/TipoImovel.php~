@@ -1,0 +1,11 @@
+<?php
+class TipoImovel extends AppModel {
+
+    public $validate = array(
+        'descricao' => array(
+            'rule' => 'notEmpty'
+        )
+    );
+
+}
+?>

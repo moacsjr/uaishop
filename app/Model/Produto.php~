@@ -1,0 +1,35 @@
+<?php
+App::uses('AppModel', 'Model');
+/**
+ * Produto Model
+ *
+ * @property Contrato $Contrato
+ */
+class Produto extends AppModel {
+
+    public $displayField = 'nome';
+
+	// As associações abaixo foram criadas com todas as chaves possíveis, então é possível remover as que não são necessárias
+
+/**
+ * Associações hasMany
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Contrato' => array(
+			'className' => 'Contrato',
+			'foreignKey' => 'produto_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
+}
