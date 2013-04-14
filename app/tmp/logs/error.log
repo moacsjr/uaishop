@@ -4352,3 +4352,136 @@
 #3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-04-14 14:36:07 Error: [NotFoundException] Tipo dado inválido
+#0 [internal function]: TipoDadosController->view('0')
+#1 /home/moacir/www/uaishop/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TipoDadosController), Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /home/moacir/www/uaishop/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TipoDadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/moacir/www/uaishop/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 14:36:18 Error: [NotFoundException] Tipo dado inválido
+#0 [internal function]: TipoDadosController->view('0')
+#1 /home/moacir/www/uaishop/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TipoDadosController), Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /home/moacir/www/uaishop/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TipoDadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/moacir/www/uaishop/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 14:36:23 Error: [NotFoundException] Tipo dado inválido
+#0 [internal function]: TipoDadosController->view('1')
+#1 /home/moacir/www/uaishop/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TipoDadosController), Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /home/moacir/www/uaishop/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TipoDadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/moacir/www/uaishop/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-14 14:36:31 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:36:31 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:37:35 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:37:35 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:37:42 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:37:42 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:37:56 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:37:56 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:41:06 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:41:06 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:43:46 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:43:46 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:52:37 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:52:37 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:52:37 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:52:37 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:52:37 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:52:37 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:52:37 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:52:37 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:53:27 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:53:27 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 14:53:28 Error: Fatal Error (1): Cannot unset string offsets in [/home/moacir/www/uaishop/lib/Cake/View/Helper/FormHelper.php, line 1606]
+2013-04-14 14:53:28 Error: [FatalErrorException] Cannot unset string offsets
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/home/moacir/ww...', 1606, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:01:43 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/home/moacir/www/uaishop/app/View/TipoDados/view.ctp, line 13]
+2013-04-14 15:01:43 Error: [FatalErrorException] syntax error, unexpected T_STRING
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/moacir/ww...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/moacir/ww...', 13, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/moacir/ww...', 13, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-14 15:01:46 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/home/moacir/www/uaishop/app/View/TipoDados/view.ctp, line 13]
+2013-04-14 15:01:46 Error: [FatalErrorException] syntax error, unexpected T_STRING
+#0 /home/moacir/www/uaishop/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/moacir/ww...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/moacir/ww...', 13, Array)
+#2 /home/moacir/www/uaishop/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/moacir/ww...', 13, Array)
+#3 /home/moacir/www/uaishop/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

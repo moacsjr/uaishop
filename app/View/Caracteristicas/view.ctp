@@ -1,9 +1,31 @@
 
-<div class="ym-column">
-  <div class="ym-col1" >
+<div class="row">
+
+<div class="span4" >
+    <div class="actions well">    
+    <ul class="nav nav-list">
+      <li class='nav-header'><?php echo __('Ações'); ?></li>
+	  
+		<li><?php echo $this->Html->link(__('Editar Caracteristica'), array('action' => 'edit', $caracteristica['Caracteristica']['id']), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Form->postLink(__('Excluir Caracteristica'), array('action' => 'delete', $caracteristica['Caracteristica']['id']), array('class'=>'ym-button'), __('Você tem certeza que deseja excluir o # %s?', $caracteristica['Caracteristica']['id'])); ?></li> 
+		<li><?php echo $this->Html->link(__('Listar Caracteristicas'), array('action' => 'index'), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Caracteristica'), array('action' => 'add'), array('class'=>'ym-button')); ?></li> 
+<li class='nav-header'><?php echo __('Tipo Dados'); ?></li>		<li><?php echo $this->Html->link(__('Listar Tipo Dados'), array('controller' => 'tipo_dados', 'action' => 'index'), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Tipo Dado'), array('controller' => 'tipo_dados', 'action' => 'add'), array('class'=>'ym-button')); ?></li> 
+<li class='nav-header'><?php echo __('Classes'); ?></li>		<li><?php echo $this->Html->link(__('Listar Classes'), array('controller' => 'classes', 'action' => 'index'), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Classe'), array('controller' => 'classes', 'action' => 'add'), array('class'=>'ym-button')); ?></li> 
+<li class='nav-header'><?php echo __('Valores'); ?></li>		<li><?php echo $this->Html->link(__('Listar Valores'), array('controller' => 'valores', 'action' => 'index'), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Valor'), array('controller' => 'valores', 'action' => 'add'), array('class'=>'ym-button')); ?></li> 
+</ul>
+   </div>
+</div>
+
+
+
+  <div class="span8" >
     <div class="caracteristicas view ym-cbox">
       <h2><?php  echo __('Caracteristica');?></h2>
-      <table>
+      <table class="table">
 	     <thead>
 	        <tr>
 	          <td width="20%">Campo</td>
@@ -123,22 +145,7 @@
 
 
 </div>
-<div class="ym-col3" >
-    <div class="actions ym-cbox">    
-      <h6><?php echo __('Ações'); ?></h6>
-	  
-		<?php echo $this->Html->link(__('Editar Caracteristica'), array('action' => 'edit', $caracteristica['Caracteristica']['id']), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Form->postLink(__('Excluir Caracteristica'), array('action' => 'delete', $caracteristica['Caracteristica']['id']), array('class'=>'ym-button'), __('Você tem certeza que deseja excluir o # %s?', $caracteristica['Caracteristica']['id'])); ?> 
-		<?php echo $this->Html->link(__('Listar Caracteristicas'), array('action' => 'index'), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Html->link(__('Novo Caracteristica'), array('action' => 'add'), array('class'=>'ym-button')); ?> 
-<?php echo __('<h6>Tipo Dados</h6>'); ?>		<?php echo $this->Html->link(__('Listar Tipo Dados'), array('controller' => 'tipo_dados', 'action' => 'index'), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Html->link(__('Novo Tipo Dado'), array('controller' => 'tipo_dados', 'action' => 'add'), array('class'=>'ym-button')); ?> 
-<?php echo __('<h6>Classes</h6>'); ?>		<?php echo $this->Html->link(__('Listar Classes'), array('controller' => 'classes', 'action' => 'index'), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Html->link(__('Novo Classe'), array('controller' => 'classes', 'action' => 'add'), array('class'=>'ym-button')); ?> 
-<?php echo __('<h6>Valores</h6>'); ?>		<?php echo $this->Html->link(__('Listar Valores'), array('controller' => 'valores', 'action' => 'index'), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Html->link(__('Novo Valor'), array('controller' => 'valores', 'action' => 'add'), array('class'=>'ym-button')); ?> 
-   </div>
-</div>
+
 </div>
 
 

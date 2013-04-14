@@ -1,14 +1,19 @@
 <div class="row-fluid">
     <div class="span4">
-        <div class="actions">
-	        <h3><?php echo __('Ações'); ?></h3>
+        <div class="actions well">
+        
+	        <ul class="nav nav-list">
 	        
-		        <?php echo $this->Html->link(__('Novo Caracteristica'), array('action' => 'add'), array('class'=>'btn')); ?>        		<?php echo $this->Html->link(__('Listar Tipo Dados'), array('controller' => 'tipo_dados', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Tipo Dado'), array('controller' => 'tipo_dados', 'action' => 'add'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Listar Classes'), array('controller' => 'classes', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Classe'), array('controller' => 'classes', 'action' => 'add'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Listar Valores'), array('controller' => 'valores', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Valor'), array('controller' => 'valores', 'action' => 'add'), array('class'=>'btn')); ?> 
+	        	<li class='nav-header'><?php echo __('Ações'); ?></li>
+        
+		        <li><?php echo $this->Html->link(__('Novo Caracteristica'), array('action' => 'add')); ?></li>        <li class='nav-header'><?php echo __('Tipo Dados'); ?></li>		<li><?php echo $this->Html->link(__('Listar Tipo Dados'), array('controller' => 'tipo_dados', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Tipo Dado'), array('controller' => 'tipo_dados', 'action' => 'add')); ?></li> 
+<li class='nav-header'><?php echo __('Classes'); ?></li>		<li><?php echo $this->Html->link(__('Listar Classes'), array('controller' => 'classes', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Classe'), array('controller' => 'classes', 'action' => 'add')); ?></li> 
+<li class='nav-header'><?php echo __('Valores'); ?></li>		<li><?php echo $this->Html->link(__('Listar Valores'), array('controller' => 'valores', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Valor'), array('controller' => 'valores', 'action' => 'add')); ?></li> 
+        
+        	</ul>
 	        
         </div>
     </div>

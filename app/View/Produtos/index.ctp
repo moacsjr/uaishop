@@ -1,12 +1,17 @@
 <div class="row-fluid">
     <div class="span4">
-        <div class="actions">
-	        <h3><?php echo __('Ações'); ?></h3>
+        <div class="actions well">
+        
+	        <ul class="nav nav-list">
 	        
-		        <?php echo $this->Html->link(__('Novo Produto'), array('action' => 'add'), array('class'=>'btn')); ?>        		<?php echo $this->Html->link(__('Listar Classes'), array('controller' => 'classes', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Classe'), array('controller' => 'classes', 'action' => 'add'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Listar Marcas'), array('controller' => 'marcas', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Marca'), array('controller' => 'marcas', 'action' => 'add'), array('class'=>'btn')); ?> 
+	        	<li class='nav-header'><?php echo __('Ações'); ?></li>
+        
+		        <li><?php echo $this->Html->link(__('Novo Produto'), array('action' => 'add')); ?></li>        <li class='nav-header'><?php echo __('Classes'); ?></li>		<li><?php echo $this->Html->link(__('Listar Classes'), array('controller' => 'classes', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Classe'), array('controller' => 'classes', 'action' => 'add')); ?></li> 
+<li class='nav-header'><?php echo __('Marcas'); ?></li>		<li><?php echo $this->Html->link(__('Listar Marcas'), array('controller' => 'marcas', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Marca'), array('controller' => 'marcas', 'action' => 'add')); ?></li> 
+        
+        	</ul>
 	        
         </div>
     </div>

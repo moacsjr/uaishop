@@ -19,22 +19,28 @@ require_once dirname(dirname(__FILE__)) . DS . 'Inflexao.php';
 ?>
 <div class="row-fluid">
     <div class="span4">
-        <div class="actions">
-	        <h3><?php echo "<?php echo __('Ações'); ?>"; ?></h3>
+        <div class="actions well">
+        
+	        <ul class="nav nav-list">
 	        
-		        <?php echo "<?php echo \$this->Html->link(__('Novo " . Inflexao::acentos($singularHumanName) . "'), array('action' => 'add'), array('class'=>'btn')); ?>";?>
+	        	<li class='nav-header'><?php echo "<?php echo __('Ações'); ?>"; ?></li>
+        
+		        <?php echo "<li><?php echo \$this->Html->link(__('Novo " . Inflexao::acentos($singularHumanName) . "'), array('action' => 'add')); ?></li>";?>
         <?php
 	        $done = array();
 	        foreach ($associations as $type => $data) {
 		        foreach ($data as $alias => $details) {
 			        if ($details['controller'] != $this->name && !in_array($details['controller'], $done)) {
-				        echo "\t\t<?php echo \$this->Html->link(__('Listar " . Inflexao::acentos(Inflector::humanize($details['controller'])) . "'), array('controller' => '{$details['controller']}', 'action' => 'index'), array('class'=>'btn')); ?> \n";
-				        echo "\t\t<?php echo \$this->Html->link(__('Novo " . Inflexao::acentos(Inflector::humanize(Inflector::underscore($alias))) . "'), array('controller' => '{$details['controller']}', 'action' => 'add'), array('class'=>'btn')); ?> \n";
+				        echo "<li class='nav-header'><?php echo __('" . Inflexao::acentos(Inflector::humanize($details['controller'])) . "'); ?></li>";
+						echo "\t\t<li><?php echo \$this->Html->link(__('Listar " . Inflexao::acentos(Inflector::humanize($details['controller'])) . "'), array('controller' => '{$details['controller']}', 'action' => 'index')); ?></li> \n";
+				        echo "\t\t<li><?php echo \$this->Html->link(__('Novo " . Inflexao::acentos(Inflector::humanize(Inflector::underscore($alias))) . "'), array('controller' => '{$details['controller']}', 'action' => 'add')); ?></li> \n";
 				        $done[] = $details['controller'];
 			        }
 		        }
 	        }
         ?>
+        
+        	</ul>
 	        
         </div>
     </div>

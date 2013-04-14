@@ -1,14 +1,19 @@
 <div class="row-fluid">
     <div class="span4">
-        <div class="actions">
-	        <h3><?php echo __('Ações'); ?></h3>
+        <div class="actions well">
+        
+	        <ul class="nav nav-list">
 	        
-		        <?php echo $this->Html->link(__('Novo Classe'), array('action' => 'add'), array('class'=>'btn')); ?>        		<?php echo $this->Html->link(__('Listar Categorias'), array('controller' => 'categorias', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Categoria'), array('controller' => 'categorias', 'action' => 'add'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Listar Caracteristicas'), array('controller' => 'caracteristicas', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Caracteristica'), array('controller' => 'caracteristicas', 'action' => 'add'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Listar Produtos'), array('controller' => 'produtos', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Produto'), array('controller' => 'produtos', 'action' => 'add'), array('class'=>'btn')); ?> 
+	        	<li class='nav-header'><?php echo __('Ações'); ?></li>
+        
+		        <li><?php echo $this->Html->link(__('Novo Classe'), array('action' => 'add')); ?></li>        <li class='nav-header'><?php echo __('Categorias'); ?></li>		<li><?php echo $this->Html->link(__('Listar Categorias'), array('controller' => 'categorias', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Categoria'), array('controller' => 'categorias', 'action' => 'add')); ?></li> 
+<li class='nav-header'><?php echo __('Caracteristicas'); ?></li>		<li><?php echo $this->Html->link(__('Listar Caracteristicas'), array('controller' => 'caracteristicas', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Caracteristica'), array('controller' => 'caracteristicas', 'action' => 'add')); ?></li> 
+<li class='nav-header'><?php echo __('Produtos'); ?></li>		<li><?php echo $this->Html->link(__('Listar Produtos'), array('controller' => 'produtos', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Produto'), array('controller' => 'produtos', 'action' => 'add')); ?></li> 
+        
+        	</ul>
 	        
         </div>
     </div>

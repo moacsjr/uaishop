@@ -1,10 +1,15 @@
 <div class="row-fluid">
     <div class="span4">
-        <div class="actions">
-	        <h3><?php echo __('Ações'); ?></h3>
+        <div class="actions well">
+        
+	        <ul class="nav nav-list">
 	        
-		        <?php echo $this->Html->link(__('Novo Marca'), array('action' => 'add'), array('class'=>'btn')); ?>        		<?php echo $this->Html->link(__('Listar Produtos'), array('controller' => 'produtos', 'action' => 'index'), array('class'=>'btn')); ?> 
-		<?php echo $this->Html->link(__('Novo Produto'), array('controller' => 'produtos', 'action' => 'add'), array('class'=>'btn')); ?> 
+	        	<li class='nav-header'><?php echo __('Ações'); ?></li>
+        
+		        <li><?php echo $this->Html->link(__('Novo Marca'), array('action' => 'add')); ?></li>        <li class='nav-header'><?php echo __('Produtos'); ?></li>		<li><?php echo $this->Html->link(__('Listar Produtos'), array('controller' => 'produtos', 'action' => 'index')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Produto'), array('controller' => 'produtos', 'action' => 'add')); ?></li> 
+        
+        	</ul>
 	        
         </div>
     </div>

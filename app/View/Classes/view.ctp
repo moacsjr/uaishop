@@ -1,9 +1,31 @@
 
-<div class="ym-column">
-  <div class="ym-col1" >
+<div class="row">
+
+<div class="span4" >
+    <div class="actions well">    
+    <ul class="nav nav-list">
+      <li class='nav-header'><?php echo __('Ações'); ?></li>
+	  
+		<li><?php echo $this->Html->link(__('Editar Classe'), array('action' => 'edit', $classe['Classe']['id']), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Form->postLink(__('Excluir Classe'), array('action' => 'delete', $classe['Classe']['id']), array('class'=>'ym-button'), __('Você tem certeza que deseja excluir o # %s?', $classe['Classe']['id'])); ?></li> 
+		<li><?php echo $this->Html->link(__('Listar Classes'), array('action' => 'index'), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Classe'), array('action' => 'add'), array('class'=>'ym-button')); ?></li> 
+<li class='nav-header'><?php echo __('Categorias'); ?></li>		<li><?php echo $this->Html->link(__('Listar Categorias'), array('controller' => 'categorias', 'action' => 'index'), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Categoria'), array('controller' => 'categorias', 'action' => 'add'), array('class'=>'ym-button')); ?></li> 
+<li class='nav-header'><?php echo __('Caracteristicas'); ?></li>		<li><?php echo $this->Html->link(__('Listar Caracteristicas'), array('controller' => 'caracteristicas', 'action' => 'index'), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Caracteristica'), array('controller' => 'caracteristicas', 'action' => 'add'), array('class'=>'ym-button')); ?></li> 
+<li class='nav-header'><?php echo __('Produtos'); ?></li>		<li><?php echo $this->Html->link(__('Listar Produtos'), array('controller' => 'produtos', 'action' => 'index'), array('class'=>'ym-button')); ?></li> 
+		<li><?php echo $this->Html->link(__('Novo Produto'), array('controller' => 'produtos', 'action' => 'add'), array('class'=>'ym-button')); ?></li> 
+</ul>
+   </div>
+</div>
+
+
+
+  <div class="span8" >
     <div class="classes view ym-cbox">
       <h2><?php  echo __('Classe');?></h2>
-      <table>
+      <table class="table">
 	     <thead>
 	        <tr>
 	          <td width="20%">Campo</td>
@@ -95,22 +117,7 @@
 
 
 </div>
-<div class="ym-col3" >
-    <div class="actions ym-cbox">    
-      <h6><?php echo __('Ações'); ?></h6>
-	  
-		<?php echo $this->Html->link(__('Editar Classe'), array('action' => 'edit', $classe['Classe']['id']), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Form->postLink(__('Excluir Classe'), array('action' => 'delete', $classe['Classe']['id']), array('class'=>'ym-button'), __('Você tem certeza que deseja excluir o # %s?', $classe['Classe']['id'])); ?> 
-		<?php echo $this->Html->link(__('Listar Classes'), array('action' => 'index'), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Html->link(__('Novo Classe'), array('action' => 'add'), array('class'=>'ym-button')); ?> 
-<?php echo __('<h6>Categorias</h6>'); ?>		<?php echo $this->Html->link(__('Listar Categorias'), array('controller' => 'categorias', 'action' => 'index'), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Html->link(__('Novo Categoria'), array('controller' => 'categorias', 'action' => 'add'), array('class'=>'ym-button')); ?> 
-<?php echo __('<h6>Caracteristicas</h6>'); ?>		<?php echo $this->Html->link(__('Listar Caracteristicas'), array('controller' => 'caracteristicas', 'action' => 'index'), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Html->link(__('Novo Caracteristica'), array('controller' => 'caracteristicas', 'action' => 'add'), array('class'=>'ym-button')); ?> 
-<?php echo __('<h6>Produtos</h6>'); ?>		<?php echo $this->Html->link(__('Listar Produtos'), array('controller' => 'produtos', 'action' => 'index'), array('class'=>'ym-button')); ?> 
-		<?php echo $this->Html->link(__('Novo Produto'), array('controller' => 'produtos', 'action' => 'add'), array('class'=>'ym-button')); ?> 
-   </div>
-</div>
+
 </div>
 
 

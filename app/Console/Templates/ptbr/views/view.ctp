@@ -18,11 +18,41 @@
 require_once dirname(dirname(__FILE__)) . DS . 'Inflexao.php';
 ?>
 
-<div class="ym-column">
-  <div class="ym-col1" >
+<div class="row">
+
+<div class="span4" >
+    <div class="actions well">    
+    <ul class="nav nav-list">
+      <li class='nav-header'><?php echo "<?php echo __('Ações'); ?>"; ?></li>
+	  
+<?php
+	echo "\t\t<li><?php echo \$this->Html->link(__('Editar " . Inflexao::acentos($singularHumanName) ."'), array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'ym-button')); ?></li> \n";
+	echo "\t\t<li><?php echo \$this->Form->postLink(__('Excluir " . Inflexao::acentos($singularHumanName) . "'), array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'ym-button'), __('Você tem certeza que deseja excluir o # %s?', \${$singularVar}['{$modelClass}']['{$primaryKey}'])); ?></li> \n";
+	echo "\t\t<li><?php echo \$this->Html->link(__('Listar " . Inflexao::acentos($pluralHumanName) . "'), array('action' => 'index'), array('class'=>'ym-button')); ?></li> \n";
+	echo "\t\t<li><?php echo \$this->Html->link(__('Novo " . Inflexao::acentos($singularHumanName) . "'), array('action' => 'add'), array('class'=>'ym-button')); ?></li> \n";
+
+	$done = array();
+	foreach ($associations as $type => $data) {
+		foreach ($data as $alias => $details) {
+			if ($details['controller'] != $this->name && !in_array($details['controller'], $done)) {
+			    echo "<li class='nav-header'><?php echo __('" . Inflexao::acentos(Inflector::humanize($details['controller']))."'); ?></li>"; 
+				echo "\t\t<li><?php echo \$this->Html->link(__('Listar " . Inflexao::acentos(Inflector::humanize($details['controller'])) . "'), array('controller' => '{$details['controller']}', 'action' => 'index'), array('class'=>'ym-button')); ?></li> \n";
+				echo "\t\t<li><?php echo \$this->Html->link(__('Novo " .  Inflexao::acentos(Inflector::humanize(Inflector::underscore($alias))) . "'), array('controller' => '{$details['controller']}', 'action' => 'add'), array('class'=>'ym-button')); ?></li> \n";
+				$done[] = $details['controller'];
+			}
+		}
+	}
+?>
+</ul>
+   </div>
+</div>
+
+
+
+  <div class="span8" >
     <div class="<?php echo $pluralVar;?> view ym-cbox">
       <h2><?php echo "<?php  echo __('" . Inflexao::acentos($singularHumanName) . "');?>";?></h2>
-      <table>
+      <table class="table">
 	     <thead>
 	        <tr>
 	          <td width="20%">Campo</td>
@@ -157,30 +187,7 @@ echo "\t<?php endforeach; ?>\n";
 
 
 </div>
-<div class="ym-col3" >
-    <div class="actions ym-cbox">    
-      <h6><?php echo "<?php echo __('Ações'); ?>"; ?></h6>
-	  
-<?php
-	echo "\t\t<?php echo \$this->Html->link(__('Editar " . Inflexao::acentos($singularHumanName) ."'), array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'ym-button')); ?> \n";
-	echo "\t\t<?php echo \$this->Form->postLink(__('Excluir " . Inflexao::acentos($singularHumanName) . "'), array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'ym-button'), __('Você tem certeza que deseja excluir o # %s?', \${$singularVar}['{$modelClass}']['{$primaryKey}'])); ?> \n";
-	echo "\t\t<?php echo \$this->Html->link(__('Listar " . Inflexao::acentos($pluralHumanName) . "'), array('action' => 'index'), array('class'=>'ym-button')); ?> \n";
-	echo "\t\t<?php echo \$this->Html->link(__('Novo " . Inflexao::acentos($singularHumanName) . "'), array('action' => 'add'), array('class'=>'ym-button')); ?> \n";
 
-	$done = array();
-	foreach ($associations as $type => $data) {
-		foreach ($data as $alias => $details) {
-			if ($details['controller'] != $this->name && !in_array($details['controller'], $done)) {
-			    echo "<?php echo __('<h6>" . Inflexao::acentos(Inflector::humanize($details['controller'])) . "</h6>'); ?>"; 
-				echo "\t\t<?php echo \$this->Html->link(__('Listar " . Inflexao::acentos(Inflector::humanize($details['controller'])) . "'), array('controller' => '{$details['controller']}', 'action' => 'index'), array('class'=>'ym-button')); ?> \n";
-				echo "\t\t<?php echo \$this->Html->link(__('Novo " .  Inflexao::acentos(Inflector::humanize(Inflector::underscore($alias))) . "'), array('controller' => '{$details['controller']}', 'action' => 'add'), array('class'=>'ym-button')); ?> \n";
-				$done[] = $details['controller'];
-			}
-		}
-	}
-?>
-   </div>
-</div>
 </div>
 
 
