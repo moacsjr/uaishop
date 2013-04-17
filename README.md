@@ -23,8 +23,8 @@ Some Handy Links
 
 [The Cake Software Foundation](http://cakefoundation.org/) - promoting development related to CakePHP
 
-Get Support!
-------------
+Get Support!!
+-------------
 
 [Our Google Group](http://groups.google.com/group/cake-php) - community mailing list and forum
 
